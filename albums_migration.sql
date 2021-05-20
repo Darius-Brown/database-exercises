@@ -5,12 +5,12 @@ DROP TABLE IF EXISTS albums;
 -- create album table
 CREATE TABLE IF NOT EXISTS albums (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    artist VARCHAR(50),
-    name VARCHAR(500),
-    release_date INTEGER,
-    sales DOUBLE,
-    genre VARCHAR(50),
-    PRIMARY KEY (id)
+    artist VARCHAR(50) NOT NULL,
+    name VARCHAR(500) NOT NULL,
+    release_date INTEGER NOT NULL,
+    sales DOUBLE NOT NULL,
+    genre VARCHAR(50) NOT NULL,
+    PRIMARY KEY (id) NOT NULL
 );
 -- insert data to table
 INSERT INTO albums (
