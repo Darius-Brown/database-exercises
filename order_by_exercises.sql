@@ -11,6 +11,6 @@ SELECT * FROM employees WHERE first_name LIKE 'e%' OR first_name LIKE 'e%';
 
 SELECT * FROM employees WHERE first_name LIKE 'e%' AND first_name LIKE 'e%';
 
-SELECT * FROM employees WHERE last_name LIKE '%Q%' AND last_name NOT LIKE '%qu%';
+SELECT * FROM employees WHERE last_name LIKE '%q%' AND last_name NOT LIKE '%qu%';
 
 SELECT emp_no FROM salaries ORDER BY salary DESC LIMIT 5 OFFSET 45;
