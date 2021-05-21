@@ -22,7 +22,10 @@ SELECT CONCAT(first_name, ' ',last_name) AS 'Full_name' FROM employees;
 
 SELECT * FROM employees WHERE month(birth_date) = 12 AND day(birth_date) = 25;
 
-SELECT * FROM employees WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND day(birth_date) = 25
+SELECT * FROM employees WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND day(birth_date) = 25;
 
 SELECT * FROM employees WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND day(birth_date) = 25
 ORDER BY birth_date ASC, hire_date DESC;
+
+SELECT DATEDIFF(CURDATE(), hire_date) FROM employees WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND day(birth_date) = 25
+
