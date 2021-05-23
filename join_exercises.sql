@@ -8,7 +8,8 @@ USE employees;
 --         JOIN employees AS e
 --
 
-SELECT e.first_name, d.dept_name FROM employees as e
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS full_name, d.dept_name
+FROM employees as e
 JOIN dept_manager as dm
 ON dm.emp_no = e.emp_no
 JOIN departments as d
